@@ -31,12 +31,12 @@ Create an account at http://openshift.redhat.com/
 
 Create a python-2.6 application
 
-    rhc app create -a django -t python-2.6
+    rhc app create -a djangohow -t python-2.6
 
 Add this upstream repo
 
-    cd django
-    git remote add upstream -m master git://github.com/openshift/django-example.git
+    cd djangohow
+    git remote add upstream -m master git://github.com/k4ml/django-example.git
     git pull -s recursive -X theirs upstream master
     
 Then push the repo upstream
@@ -45,5 +45,5 @@ Then push the repo upstream
 
 That's it, you can now checkout your application at (default admin account is admin/admin):
 
-    http://django-$yournamespace.rhcloud.com
+    http://djangohow-$yournamespace.rhcloud.com
 
