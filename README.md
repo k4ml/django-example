@@ -49,3 +49,18 @@ That's it, you can now checkout your application at (default admin account is ad
     
 [1]:https://openshift.redhat.com/app/getting_started
 
+Local Development
+=================
+Make sure to have virtualenv installed first. The easiest way is to install using linux package manager such as apt-get or yum.
+
+    sudo apt-get install virtualenv
+    cd djangohow
+    virtualenv --no-site-packages .
+    ./bin/python setup.py install
+    ./bin/python manage.py syncdb
+    ./bin/python manage.py runserver
+    
+You can then access the application now running at http://localhost:8000/.
+
+
+
