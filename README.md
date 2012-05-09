@@ -27,7 +27,7 @@ back up your database w/ 'rhc app snapshot save' first :) )
 Running on OpenShift
 ----------------------------
 
-Create an account at http://openshift.redhat.com/
+Create an account at http://openshift.redhat.com/ and install the [command line tools client][1].
 
 Create a python-2.6 application
 
@@ -46,4 +46,6 @@ Then push the repo upstream
 That's it, you can now checkout your application at (default admin account is admin/admin):
 
     http://djangohow-$yournamespace.rhcloud.com
+    
+[1]:https://openshift.redhat.com/app/getting_started
 
